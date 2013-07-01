@@ -79,7 +79,7 @@ foreach ( $deleteIDArray as $deleteID )
 
 $canRemove = ( $canRemoveCount > 0 );
 
-$Module->setTitle( ezi18n( 'kernel/class', 'Update metatags attributes for classes %class_id', null, array( '%class_id' => $ClassID ) ) );
+$Module->setTitle( ezpI18n::tr( 'kernel/class', 'Update metatags attributes for classes %class_id', null, array( '%class_id' => $ClassID ) ) );
 require_once( "kernel/common/template.php" );
 $tpl = templateInit();
 
@@ -92,5 +92,5 @@ $tpl->setVariable( 'can_remove', $canRemove );
 $Result = array();
 $Result['content'] = $tpl->fetch( "design:metatags/setclassmetatags.tpl" );
 $Result['path'] = array( array( 'url' => '/metatags/classlist/',
-                                'text' => ezi18n( 'kernel/class', 'Classes' ) ) );
+                                'text' => ezpI18n::tr( 'kernel/class', 'Classes' ) ) );
 ?>
