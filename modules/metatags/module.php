@@ -30,22 +30,27 @@ $Module = array( "name" => "nxcMetatags",
 $ViewList = array();
 
 $ViewList["setclassmetatags"] = array(
-    "functions" => array ( 'administrate' ),   
+    "functions" => array ( 'administrate' ),
     "script" => "setclassmetatags.php",
     "default_navigation_part" => 'ezsetupnavigationpart',
     "params" => array( 'GroupID' ) );
 
 $ViewList["unsetclassmetatags"] = array(
-    "functions" => array ( 'administrate' ),   
+    "functions" => array ( 'administrate' ),
     "script" => "unsetclassmetatags.php",
     "default_navigation_part" => 'ezsetupnavigationpart',
     "params" => array( 'GroupID' ) );
 
 $ViewList["classlist"] = array(
-    "functions" => array ( 'administrate' ),   
+    "functions" => array ( 'administrate' ),
     "script" => "classlist.php",
     "default_navigation_part" => 'ezsetupnavigationpart',
     "params" => array( 'class_group_id' ) );
+$ViewList["grouplist"] = array(
+    "functions" => array ( 'administrate' ),
+    "script" => "grouplist.php",
+    "default_navigation_part" => 'ezsetupnavigationpart',
+    "params" => array() );
 
 $FunctionList = array();
 $FunctionList['administrate'] = array();
