@@ -70,7 +70,7 @@
     <input type="hidden" name = "CurrentGroupName" value="{$group.name|wash}" />
 
     {section show=$class_count}
-      <input class="button" type="submit" name="SetButton" value="{'Add metatags attributes for selected classes'|i18n( 'design/admin/metatags/classlist' )}" title="{'Add metatags attributes for selected classes' )|i18n( 'design/admin/metatags/classlist' )}" />
+      <input class="button" type="submit" name="SetButton" value="{'Add metatags attributes for selected classes'|i18n( 'design/admin/metatags/classlist' )}" title="{'Add metatags attributes for selected classes'|i18n( 'design/admin/metatags/classlist' )}" />
       <input class="button" type="submit" name="UnsetButton" value="{'Remove metatags attributes for selected classes'|i18n( 'design/admin/metatags/classlist' )}" title="{'Remove metatags attributes for selected classes'|i18n( 'design/admin/metatags/classlist' )}" />
     {section-else}
       <input class="button-disabled" type="submit" name="SetButton" value="{'Add metatags attributes for selected classes'|i18n( 'design/admin/metatags/classlist' )}" disabled="disabled" />
