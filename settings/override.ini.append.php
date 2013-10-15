@@ -5,4 +5,4 @@ Source=page_head.tpl
 MatchFile=page_head.tpl
 Subdir=templates
 
-/ ?>
+*/ ?>
