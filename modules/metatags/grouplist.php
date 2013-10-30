@@ -38,7 +38,6 @@ $tpl->setVariable( "module", $Module );
 $Result = array();
 $Result['content'] = $tpl->fetch( "design:metatags/grouplist.tpl" );
 $Result['path'] = array( array( 'url' => '/class/grouplist/',
-                                'text' => ezpI18n::tr( 'kernel/class', 'Classes' ) ),
-                         array( 'url' => false,
-                                'text' => $groupName ) );
+                                'text' => ezpI18n::tr( 'kernel/class', 'Classes' ) )
+                  );
 ?>
